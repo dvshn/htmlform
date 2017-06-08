@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- ******************************************************************* -->
+<!—File Information -->
+<!-—Document Name:  midtermproj.html -->
+<!--Author: David Sohn -->
+<!--Date Created: 11/06/2016 -->
+<!--Date Updated:        		-->
+<!-—Description: Midterm project form layout that includes buttons and -->
+<!--             form options to successfully recieve customer input. -->
+<!--									-->
+<!--									-->
+<!--									-->
+<!-- ******************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Midterm Project Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<form class="contact_form" action="#" method="post" name="contact_form">
+	<ul>
+		<li>
+			<h2>Contact Us</h2>
+			<span class="required_notification">* Denotes Required Field</span>
+		</li>
+		<li>
+			<label for="salutation">Salutation:</label>
+			<select id = "myList">
+				<option value = "Mr.">Mr.</option>
+				<option value = "Mrs.">Mrs.</option>
+				<option value = "Ms.">Ms.</option>
+				<option value = "Miss.">Miss</option>
+				<option value = "Sr.">Sr</option>
+				<option value = "Jr.">Jr</option>
+			</select>
+		</li>
+		<li>
+			<label for="name">Name:</label>
+			<input type="text" name="name" placeholder="David Sohn" required />
+		</li>
+		<li>
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="d_sohn@example.com" required />
+			<span class="form_hint">Proper format "name@something.com"</span>
+		</li>
+		<li>
+			<label for="tel">Phone:</label>
+			<input type="tel" name="Phone" placeholder="(123)456-7890" required />
+			<span class="form_hint">Proper format "(123)456-7890"</span>
+		</li>
+		<li>
+			<label for="website">Website:</label>
+			<input type="url" name="website" placeholder="http://dsohn.com" required pattern="(http|https)://.+"/>
+			<span class="form_hint">Proper format "http://someaddress.com"</span>
+		</li>
+		<li>
+			<label for="message">Message:</label>
+			<textarea name="message" cols="40" rows="6" required ></textarea>
+		</li>
+		<li>
+			<label><input type="checkbox" id="cbox1" value"first_checkbox"> I wish to recieve a reply regarding my message</label><br>
+		</li>
+		<li>
+			<button class="submit" type="submit">Submit Form</button>
+		</li>
+	</ul>
+</form>
+</body>
+</html>
